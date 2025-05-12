@@ -121,7 +121,7 @@ stest_return_to_user_location_button: SKIPPED
 ℹ️ Tests marked as SKIPPED correspond to optional UI features that may not appear in all environments or screen sizes (e.g., sidebar scroll dragger, "locate me" button). These are skipped gracefully to allow CI to continue.
 
 🐞 Bug Reports
-Bug reports were documented in the same file as the manual test cases (TESTCASES.pdf), and clearly labeled (e.g., CREATE-BUG-01, NAV-BUG-XX).
+Bug reports were documented in the same file as the manual test cases ("Test_cases".pdf), and clearly labeled (e.g., CREATE-BUG-XX, NAV-BUG-XX).
 Example:
 
 CREATE-BUG-01 — 500 Internal Server Error on Minimal Valid Input
