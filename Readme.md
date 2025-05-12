@@ -2,7 +2,7 @@
 
 This repository contains:
 
-1. **Manual Test Cases**  
+1. **Manual Test Cases**  #
    - `Test_cases.pdf` – the full set of manual test-cases (positive & negative) for https://www.navigator.ba  
    - A smoke-test subset was identified and automated.
    - Bugs were also recorded
@@ -15,10 +15,9 @@ This repository contains:
    - `requirements.txt` – Python dependencies  
 
 ---
-
 ## 📑 Manual Test-Case Analysis
 
-We reviewed **all** test cases in `TESTCASES (9).pdf` and classified them:
+All test cases were reviewed and classified accordingly:
 
 - **Positive test cases** (core happy-paths & bug-validation positives):  
   NAV-00, NAV-01, …, MAP-05, CLAIM-04, SUGG-01, …, CREATE-03  
@@ -71,8 +70,8 @@ From those, these were selected as a **smoke** subset (critical end-to-end flows
 
 ```bash
 # 1) Clone this repo
-git clone https://github.com/<your-org>/navigator-smoke-tests.git
-cd navigator-smoke-tests
+git clone https://github.com/DemirHasicic/navigator-ba-smoke-tests.git
+cd navigator-ba-smoke-tests
 
 # 2) Create & activate a virtual environment
 python -m venv venv
@@ -83,7 +82,7 @@ source venv/bin/activate
 
 # 3) Install dependencies
 pip install -r requirements.txt
-
+```````
 ---
 
 ## 🧪 Test Execution Summary
@@ -122,8 +121,9 @@ stest_return_to_user_location_button: SKIPPED
 ℹ️ Tests marked as SKIPPED correspond to optional UI features that may not appear in all environments or screen sizes (e.g., sidebar scroll dragger, "locate me" button). These are skipped gracefully to allow CI to continue.
 
 🐞 Bug Reports
-Bug reports were documented in the same file as the manual test cases (TESTCASES.pdf), and clearly labeled (e.g., CREATE-BUG-01, NAV-BUG-XX). 
-Examples:
+Bug reports were documented in the same file as the manual test cases (TESTCASES.pdf), and clearly labeled (e.g., CREATE-BUG-01, NAV-BUG-XX).
+Example:
+
 CREATE-BUG-01 — 500 Internal Server Error on Minimal Valid Input
 Component: Create Place Form
 Steps: Fill only “Name” and “Category” → Click "Create"
